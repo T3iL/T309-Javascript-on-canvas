@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        #board{
+  position:block;
+  width:500px;
+  height:200px;
+  border: 1px solid red;
+  margin:auto;
+  overflow-x:hidden;
+}
+#score{
+  text-align:center;
+}
+#player,#box{
+  position:relative;
+  bottom:0;
+}
+.animate{
+  animation: jump 0.5s;  
+}
+#player{
+  left:20px;
+  top:180px;
+  width:20px;
+  height:20px;
+  background:blue;
+
+}
+#box{
+  top:100px;
+  left:100%;
+  width:20px;
+  height:80px;
+  background:red;
+  animation: boxanimation 1s infinite linear;
+}
+@keyframes boxanimation{
+  from{left:500px}
+  to{left:-20px}
+}
+@keyframes jump{
+  0%{top:180px;}
+  25%{top:40px;}
+  60%{top:40px;}
+  100%{top:180px;}
+}
+
+    </style>
+</head>
+<body>
+    <div id="board">
+        <div id="player"></div>
+        <div id="box"></div>
+      </div>
+      <p id="score">
+        Score: 0
+      </p>
+      <script>
+        const html = document.querySelector('html')
+        const player = document.querySelector('#player');
+        const box = document.querySelector('#box');
+        const score = document.querySelector('#score');
+        counter = 0;
+
+
+
+html.addEventListener('click',jump);
+
+function jump(){
+  player.classList.add('animate');
+  
+  setTimeout(function(){
+     player.classList.remove('animate');
+  },500);
+}
+
+var checkGame = setInterval(function(){
+   playerTop = parseInt(window.getComputedStyle(player).getPropertyValue("top"));
+   boxLeft = parseInt(window.getComputedStyle(box).getPropertyValue("left"));
+
+   if(boxLeft < 20 && boxLeft > -20 && playerTop >= 60){
+       box.style.animation = 'none';
+       alert('Game Over! Your Score is: ' + Math.floor(counter/100));
+       counter=0;
+       box.style.animation = "boxanimation 1s infinite linear";
+   } else {
+        counter++  
+        score.innerHTML =  "Score: " + Math.floor(counter/100)    
+    }
+
+},10);
+      </script>
+</body>
+</html>
