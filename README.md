@@ -8,7 +8,7 @@
 
 ### --------ZAD
 ```
-T30901 - Stwórz zegar czasu rzeczywistego (wspazówki lub okręgi)
+T30901 - Stwórz zegar czasu rzeczywistego (wskazówki lub okręgi)
 
 T30902 - Utwórz stoper z możliwością zapisywania wyników (czasów)
 
