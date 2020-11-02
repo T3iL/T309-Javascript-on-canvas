@@ -15,7 +15,13 @@ T30902 - Utwórz stoper z możliwością zapisywania wyników (czasów)
 ### --------Links
 https://github.com/T3iL/T309-Javascript-on-canvas
 
-https://codepen.io/infrmtktl/pen/mdEmyoN
+https://codepen.io/infrmtktl/pen/abZGKLx
+
+https://www.w3schools.com/graphics/canvas_clock.asp
+
+https://www.w3schools.com/html/html5_webstorage.asp
+
+https://www.w3schools.com/js/js_cookies.asp
 
 GOOGLE DRIVE: https://drive.google.com/drive/folders/1FCn1K3AvZdta3JRNnfCFUlSqAyMWgxNe?usp=sharing
 
