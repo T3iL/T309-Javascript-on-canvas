@@ -29,6 +29,8 @@ https://www.w3schools.com/js/js_cookies.asp
 
 https://www.w3schools.com/jsref/jsref_obj_string.asp
 
+https://bashooka.com/coding/26-amazing-css-clocks/
+
 GOOGLE DRIVE: https://drive.google.com/drive/folders/1FCn1K3AvZdta3JRNnfCFUlSqAyMWgxNe?usp=sharing
 
 https://developer.mozilla.org/pl/docs/Web/API/Canvas_API/Tutorial
