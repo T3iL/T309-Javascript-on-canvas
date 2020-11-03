@@ -4,7 +4,11 @@
 1. Date
 2. Cookies
 3. Local storage
+4. Arrays (new, push/pop, length);
+5. String methods (length, charAt, substr, split, trim)
 ```
+
+let myArray = myString.split(',');
 
 ### --------ZAD
 ```
