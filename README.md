@@ -1,4 +1,4 @@
-# (2020.10.26/27) Javascript-on-canvas
+# (2020.11.02/03) Javascript-on-canvas
 ## -------INFO
 ```ww
 1. Date
